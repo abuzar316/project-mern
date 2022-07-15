@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --theme-f-color: #0096a3;
+  --theme--s-color: #fff;
+}
+
+.custom-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-content-space {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.cl-3 {
+  width: 25%;
+}
+
+.cl-6 {
+  width: 50%;
+}
+
+.cl-12 {
+  width: 100%;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inblock {
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+}
+.pdd-3{
+  padding: 7px 15px;
+}
+.pdd {
+  padding: 15px;
+}
+
+.pdd-5 {
+  padding: 25px;
+}
+
+.pdd-4 {
+  padding: 15px;
+}
+
+.color-theme {
+  color: var(--theme-f-color);
+}
+
+.color-delete {
+  color: red;
+}
+
+.color-edit {
+  color: blue;
+}
+select{
+  border: none;
+  outline: none;
+}
+/* heighht */
+.vh-100 {
+  height: 100vh;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.border-radius {
+  border-radius: 9px;
+}
+
+.mt-5 {
+  margin-top: 20px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* navigation css start*/
+.navigation {
+  background-color: var(--theme-f-color);
+  color: var(--theme--s-color);
+}
+
+.navigation a {
+  color: var(--theme--s-color);
+}
+
+.navigation .item a:hover {
+  background: var(--theme--s-color);
+  color: var(--theme-f-color);
+
+}
+
+/* navigation css end*/
+
+/* dashboards style css start */
+/* dashboards navbar css start */
+.dashboard-navbar {
+  background: var(--theme-f-color);
+  border-bottom: 1px solid var(--theme--s-color);
+  padding: 0 35px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.dashboard-navbar .logo a {
+  color: var(--theme--s-color);
+}
+
+.dashboard-navbar .item a {
+  color: var(--theme--s-color);
+}
+
+.dashboard-navbar .item li {
+  color: var(--theme--s-color);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* dashboards navbar css end */
+/* sidebar styles*/
+.dashboard-sidebar {
+  width: 180px;
+  background: var(--theme-f-color);
+  height: 100vh;
+  position: fixed;
+  padding-top: 44px;
+}
+
+.dashboard-sidebar .item li a {
+  color: var(--theme--s-color);
+  border-bottom: 1px solid var(--theme--s-color);
+  width: 100%;
+  padding: 8px 15px;
+}
+
+.dashboard-sidebar .item li a:hover {
+  color: var(--theme-f-color);
+  background-color: var(--theme--s-color);
+}
+
+/* sidebar styles*/
+.dashboard-body {
+  background: #c1faff;
+  margin-left: 181px;
+  padding-top: 44px;
+  position: relative;
+}
+
+/* user table css start */
+.user-table table {
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.user-table table th {
+  padding: 5px 10px;
+}
+
+/* user table css end */
+/* model css start */
+.model-overlay{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+}
+.model-container {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  background: #fff;
+  visibility: hidden;
+}
+.visible-show{
+  visibility: visible;
+}
+
+/* model css end */
+/* dashboards style css end */
